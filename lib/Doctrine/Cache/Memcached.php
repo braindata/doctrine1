@@ -43,7 +43,7 @@ class Doctrine_Cache_Memcached extends Doctrine_Cache_Driver
      *
      * @param array $options        associative array of cache driver options
      */
-    public function  __construct($options = array())
+    public function __construct($options = array())
     {
         if ( ! extension_loaded('memcached')) {
             throw new Doctrine_Cache_Exception('In order to use Memcached driver, the memcached extension must be loaded.');
